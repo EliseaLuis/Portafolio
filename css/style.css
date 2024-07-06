@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'Heavitas';
+  src: url('https://raw.githack.com/SochavaAG/example-mycode/master/pens/1_fonts/Heavitas/Heavitas.eot');
+  src: url('https://raw.githack.com/SochavaAG/example-mycode/master/pens/1_fonts/Heavitas/Heavitas.woff2') format('woff2'),
+  url('https://raw.githack.com/SochavaAG/example-mycode/master/pens/1_fonts/Heavitas/Heavitas.woff') format('woff'),
+  url('https://raw.githack.com/SochavaAG/example-mycode/master/pens/1_fonts/Heavitas/Heavitas.ttf') format('truetype'),
+  url('https://raw.githack.com/SochavaAG/example-mycode/master/pens/1_fonts/Heavitas/Heavitas.svg#Heavitas') format('svg'),
+  url('https://raw.githack.com/SochavaAG/example-mycode/master/pens/1_fonts/Heavitas/Heavitas.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@keyframes wave {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: -1600px;
+  }
+}
+
+.wave-background {
+  background: url('https://raw.githack.com/SochavaAG/example-mycode/master/pens/animation-wave-shadow/images/wave.svg') repeat-x;
+  background-size: 1600px 198px;
+  filter: drop-shadow(5px -10px 3px rgba(0, 0, 0, .2));
+}
+
+.animate-wave {
+  animation: wave 20s linear infinite;
+}
